@@ -14,3 +14,4 @@ pwd
 
 echo "Aonde estou??"
 cd /home/antonio/Downloads
+pwd
