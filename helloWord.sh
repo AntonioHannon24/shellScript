@@ -2,4 +2,3 @@
 
 echo "Hello world"
 echo ""
-echo "Sou tão delicioso!!"
