@@ -22,6 +22,7 @@ echo "==================================="
 read -p "Escolha uma opção: " opcao
 
 case "$opcao" in
+
     1) 
             cut -d ':' -f 1 /etc/passwd; read -p "Sair? (Pressione enter):  "  quit
                 if [[ "$quit" = "" ]]; then
@@ -40,9 +41,6 @@ case "$opcao" in
                     exit 1;
                 fi
             ./administracaoUsuarios.sh;;
-    4) 
-            exit ;;
-    *) 
-            echo "Dados invalidos"
-             ./administracaoUsuarios.sh;;
+    4) exit ;;
+    *) echo "Dados invalidos"; ./administracaoUsuarios.sh;;
 esac
