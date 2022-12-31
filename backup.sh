@@ -11,11 +11,11 @@ case $1 in
             echo "Você precisa dar um nome ao seu novo backup!!"
         else
             if [[ $(find ~/ -name Backup) = "" ]];then
-            mkdir ~/Backup
+                mkdir ~/Backup
             fi
             if [[ $(find ~/Backup -name "$3".zip) = "" ]];then
-            cd ~/Backup
-             zip -r $3.zip  "$2"            
+                cd ~/Backup
+                zip -r $3.zip  "$2"            
             else
                 echo "Esse nome de backup já existe"
             fi
