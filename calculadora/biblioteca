@@ -1,0 +1,48 @@
+soma (){
+    read -p "Digite o primeiro valor: " n1
+    read -p "Digite o segundo  valor: " n2
+    if [[ -z $n1 || -z $n2 ]]; then 
+        echo "Você não digitou um campo"
+        principal
+    fi
+    echo "O resultado é: $(( $n1 + $n2 ))"
+    sleep 3s
+    clear
+    principal
+}
+subtracao(){
+    read -p "Digite o primeiro valor: " n1
+    read -p "Digite o segundo  valor: " n2
+    if [[ -z $n1 || -z $n2 ]]; then 
+        echo "Você não digitou um campo"
+        principal
+    fi
+    echo "O resultado é: $(( $n1 - $n2 ))"
+    sleep 3s
+    clear
+    principal
+}
+multiplicacao(){
+    read -p "Digite o primeiro valor: " n1
+    read -p "Digite o segundo  valor: " n2
+    if [[ -z $n1 || -z $n2 ]]; then 
+        echo "Você não digitou um campo"
+        principal
+    fi
+    echo "O resultado é: $(( $n1 * $n2 ))"
+    sleep 3s
+    clear
+    principal
+}
+divisao(){
+    read -p "Digite o primeiro valor: " n1
+    read -p "Digite o segundo  valor: " n2
+    if [[ -z $n1 || -z $n2 ]]; then 
+        echo "Você não digitou um campo"
+        principal
+    fi
+    echo "O resultado é: $(( $n1 / $n2 ))"
+    sleep 3s
+    clear
+    principal
+}
